@@ -1,6 +1,7 @@
 // src/pages/Pageroutes.jsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Intro from './chapters/intro.jsx';
 import Se1Ch1 from './chapters/Se1Ch1.jsx';
 import Se1Ch2 from './chapters/Se1Ch2.jsx';
 import Se1Ch3 from './chapters/Se1Ch3.jsx';
@@ -24,11 +25,13 @@ import Se3Ch7 from './chapters/Se3Ch7.jsx';
 // import Se4Ch2 from './chapters/Se4Ch2.jsx';
 // import Se4Ch3 from './chapters/Se4Ch3.jsx';
 // import Se4Ch4 from './chapters/Se4Ch4.jsx';
+import NotFound from './notfound.jsx';
 
 const Pageroutes = () => {
   const { sectionId, chapterId } = useParams();
 
   const renderChapterContent = () => {
+    if (sectionId === '0' && chapterId === '0') return <Intro />;
     if (sectionId === '1' && chapterId === '1') return <Se1Ch1 />;
     if (sectionId === '1' && chapterId === '2') return <Se1Ch2 />;
     if (sectionId === '1' && chapterId === '3') return <Se1Ch3 />;
@@ -52,7 +55,7 @@ const Pageroutes = () => {
     // if (sectionId === '4' && chapterId === '2') return <Se4Ch2 />;
     // if (sectionId === '4' && chapterId === '3') return <Se4Ch3 />;
     // if (sectionId === '4' && chapterId === '4') return <Se4Ch4 />;
-    return <p>Content not found</p>;
+    return <NotFound />;
   };
 
   return (
