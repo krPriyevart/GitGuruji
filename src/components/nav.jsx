@@ -12,8 +12,8 @@ const menuItems = [
     to:'about',
   },
   {
-    name: 'Contact',
-    to:'contact',
+    name: 'Start Learning Now',
+    to:'/section/1/chapter/1',
   },
 ]
 const Nav = () => {
@@ -54,7 +54,7 @@ const Nav = () => {
             type="button"
             className="rounded-md bg-slate-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
-            Check Commands
+            Try Commands
           </button>
           </Link>
         </div>
@@ -98,12 +98,14 @@ const Nav = () => {
                     ))}
                   </nav>
                 </div>
+                <Link to='Checkcommands'>
                 <button
                   type="button"
                   className="mt-4 w-full rounded-md bg-slate-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                 >
-                  Lets Start
+                  Try Commands
                 </button>
+                </Link>
               </div>
             </div>
           </div>

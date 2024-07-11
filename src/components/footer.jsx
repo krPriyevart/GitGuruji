@@ -30,7 +30,7 @@ function Footer() {
   const chapterChunks = chunkArray(allChapters, 5);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top on route change
+    window.scrollTo(0, 0); 
   }, [location]);
 
   const handleLinkClick = (path) => {

@@ -1,4 +1,3 @@
-// src/pages/Pageroutes.jsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Intro from './chapters/intro.jsx';

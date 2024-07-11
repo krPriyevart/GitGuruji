@@ -1,4 +1,3 @@
-// src/App.jsx
 import {
   BrowserRouter,
   Routes,
@@ -22,8 +21,9 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="section/:sectionId/chapter/:chapterId" element={<Pageroutes />} />
           <Route path="Checkcommands" element={<CheckCommand />} />
-          <Route path="*" element={<NotFound />} />
+          
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
