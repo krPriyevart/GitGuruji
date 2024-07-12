@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Se1Ch1 = () => {
   return (
     <div className="text-white p-8">
@@ -115,8 +115,8 @@ const Se1Ch1 = () => {
         where we’ll start our hands-on journey with Git and GitHub. 🚀
       </p>
       <div className="flex justify-between">
-        <a href="/section/0/chapter/0">Prev</a>
-        <a href="/section/1/chapter/2">Next</a>
+        <Link to="/section/0/chapter/0">Prev</Link>
+        <Link to="/section/1/chapter/2">Next</Link>
       </div>
     </div>
   );

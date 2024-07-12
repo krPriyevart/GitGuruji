@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Se3Ch3 = () => {
   return (
@@ -143,8 +144,8 @@ const Se3Ch3 = () => {
 
       <hr className="my-4" />
       <div className="flex justify-between">
-        <a href="/section/3/chapter/2">Prev</a>
-        <a href="/section/3/chapter/4">Next</a>
+        <Link to="/section/3/chapter/2">Prev</Link>
+        <Link to="/section/3/chapter/4">Next</Link>
       </div>
     </div>
   );
