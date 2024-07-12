@@ -10,6 +10,10 @@ const menuItems = [
   {
     name: 'About',
     to:'about',
+  },  
+  {
+    name: 'Contact',
+    to:'contact',
   },
   {
     name: 'Start Learning Now',
