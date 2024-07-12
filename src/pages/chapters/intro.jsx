@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 const Intro = () => {
@@ -180,7 +181,7 @@ const Intro = () => {
       <p className="py-4">Stay elated and keep exploring! 🚀</p>
       <hr className="my-4" />
       <div>
-        <a href="/section/1/chapter/1">Next</a>
+        <Link to="/section/1/chapter/1">Next</Link>
       </div>
     </div>
   );
