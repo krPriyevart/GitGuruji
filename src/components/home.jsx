@@ -4,9 +4,9 @@ import { ArrowRight, Star, GitBranch, Code, Users } from 'lucide-react';
 
 const Home = () => {
   return (
-    <div className="bg-slate-800 text-white min-h-screen font-changa">
+    <div className="bg-slate-800 text-white min-h-screen font-changa ">
       <header className="text-center py-10 bg-slate-800">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to GittoDoc
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to GitGuruji
         </h1>
         <p className="text-lg md:text-2xl">Master Git and GitHub with our step-by-step tutorials and interactive guides.</p>
       </header>
@@ -33,7 +33,7 @@ const Home = () => {
         </section>
 
         <section className="bg-slate-800 py-10 rounded-lg text-center">
-          <h2 className="text-3xl font-bold mb-6">Why Choose GittoDoc
+          <h2 className="text-3xl font-bold mb-6">Why Choose GitGuruji
           </h2>
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex flex-col items-center">
@@ -72,7 +72,7 @@ const Home = () => {
 
         <section className="bg-slate-800 py-10 rounded-lg text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
-          <Link to="/section/1/chapter/1" className="inline-block px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition duration-300">Start Learning Now</Link>
+          <Link to="/section/0/chapter/0" className="inline-block px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition duration-300">Start Learning Now</Link>
         </section>
       </main>
 

@@ -17,7 +17,7 @@ const menuItems = [
   },
   {
     name: 'Start Learning Now',
-    to:'/section/1/chapter/1',
+    to:'/section/0/chapter/0',
   },
 ]
 const Nav = () => {
@@ -36,7 +36,7 @@ const Nav = () => {
            <img src={gitlogo}   className="inline-block h-10 w-10 rounded-full"/>
            </Link>
           </span>
-          <span className="font-bold  text-gray-50">GittoDoc</span>
+          <span className="font-bold  text-gray-50">GitGuruji</span>
         </div>
         <div className="hidden grow items-start lg:flex">
           <ul className="ml-12 inline-flex space-x-8">
@@ -89,16 +89,15 @@ const Nav = () => {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-y-4">
-                    {menuItems.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-300"
-                      >
+                    {menuItems.map((item, index) => (
+                      
                         <span className="ml-3 text-base font-medium text-gray-50 ">
+                          <Link to={item.to} key={index}
+                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-300">
                           {item.name}
+                          </Link>
                         </span>
-                      </a>
+                      
                     ))}
                   </nav>
                 </div>

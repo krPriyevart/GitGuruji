@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState('');
   const location = useLocation();
@@ -20,8 +21,8 @@ const Sidebar = () => {
   };
 
   return (
-    <div style={{ fontFamily: "Titillium Web"}} className='w-1/6 h-auto font-sans bg-slate-800 text-white flex flex-col justify-start py-4 leading-8 shadow-lg overflow-y-auto'>
-      <div className='px-8 py-2 bg-'>
+    <div style={{ fontFamily: "Titillium Web"}} className=' w-1/6 h-auto font-sans bg-slate-800 text-white flex flex-col justify-start py-4 leading-8 shadow-lg overflow-y-auto'>
+      <div className='px-8 py-2 '>
         <p className='text-2xl font-bold mb-4'>Git & GitHub Guide</p>
         <ul>
           <li className='font-semibold text-lg mb-2'>
@@ -83,6 +84,7 @@ const Sidebar = () => {
           </ul>
         </ul>
       </div>
+    
     </div>
   );
 };
